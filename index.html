@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <style>
+        input{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        select{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        textarea{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        fieldset{
+            width: 500px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <form action="#" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="name">Nombre:</label><br>
+                <input type="text" name="name" placeholder="Nombre" required><br>
+                <label for="date">Fecha de Nacimiento:</label><br>
+                <input type="date" name="date" required><br>
+                <label for="telefono">Numero de telefono:</label><br>
+                <input type="text" name="telefono" placeholder="Telefono" required><br>
+                <label for="add">Direccion</label><br>
+                <textarea name="add" id="" cols="30" rows="10" placeholder="Direccion"></textarea><br>
+            </fieldset>
+            <fieldset>
+                <legend>Datos de Ubicacion</legend>
+                <label for="city">Ciudad:</label><br>
+                <input type="text" name="city" placeholder="Ciudad" required><br>
+                <label for="pais">Pais:</label><br>
+                <input type="text" name="Pais" placeholder="Pais" required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Registro</legend>
+                <label for="email">Correo Electronico</label><br>
+                <input type="email" name="email" placeholder="Email" required><br>
+                <label for="pass">Contraseña</label><br>
+                <input type="password" name="pass" placeholder="Contraseña" pattern=".{6,}" title="Seis o mas caracteres" required><br>
+                <label for="pass2">Verifica Contraseña</label><br>
+                <input type="password" name="pass2" placeholder="Verifica Contraseña" pattern=".{6,}" title="Seis o mas caracteres" required><br>
+            </fieldset>
+            <fieldset>
+                    <legend>Intereses</legend>
+                    <label for="animals">Animal Favorito</label><br>
+                    <select name="animals" id="" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="elefante">Elefante</option>
+                        <option value="raton">Raton</option>
+                    </select><br>
+            </fieldset>
+            <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
